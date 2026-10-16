@@ -1,0 +1,6 @@
+{
+  "name": "AI-Xpertise | Accélérateur de Carrière & Stratégie LinkedIn",
+  "description": "Accélérateur de carrière pour cadres dirigeants et talents. Stratégie LinkedIn, refonte de CV haut de gamme et formations IA par Sergio, Top 3 créateur Favikon.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
