@@ -19,7 +19,8 @@ import { BRAND_INFO, MISSION_TEXT, TESTIMONIALS, FOUNDER_STORY } from '../data/c
 import { ContactAppointmentForm } from '../components/ContactAppointmentForm';
 import { PageId } from '../components/Navbar';
 import { useTheme } from '../context/ThemeContext';
-
+import heroCareerCoaching from '../assets/images/hero_career_coaching_1792114566820.jpg';
+import sergioFounderPortrait from '../assets/images/sergio_founder_portrait_1792114565496.jpg';
 interface HomePageProps {
   onNavigate: (page: PageId) => void;
   onSelectPackage?: (pkgId: string) => void;
@@ -140,11 +141,10 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
           }`}>
             <div className="aspect-[16/9] w-full relative bg-slate-900">
               <img
-                src="/src/assets/images/hero_career_coaching_1792114566820.jpg"
-                alt="AI-Xpertise accompagnement carriere et comites de direction"
-                className="w-full h-full object-cover group-hover:scale-[1.01] transition-transform duration-700"
-                referrerPolicy="no-referrer"
-              />
+  src={heroCareerCoaching}
+  alt="AI-Xpertise accompagnement carrière et comités de direction"
+  className="w-full h-full object-cover group-hover:scale-[1.01] transition-transform duration-700"
+/>
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/30 to-transparent" />
               
               <div className="absolute bottom-6 left-6 right-6 flex flex-col sm:flex-row sm:items-end justify-between gap-4">
@@ -398,10 +398,9 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                 isDark ? 'border-slate-700/80 bg-slate-950' : 'border-slate-200 bg-white'
               }`}>
                 <img
-                  src="/src/assets/images/sergio_founder_portrait_1792114565496.jpg"
-                  alt="Sergio - Fondateur de AI-Xpertise et Coach Carriere"
-                  className="w-full h-auto object-cover aspect-square"
-                  referrerPolicy="no-referrer"
+                src={sergioFounderPortrait}
+                alt="Sergio - Fondateur de AI-Xpertise et Coach Carrière"
+                className="w-full h-auto object-cover aspect-square"
                 />
                 
                 {/* Overlay card */}
